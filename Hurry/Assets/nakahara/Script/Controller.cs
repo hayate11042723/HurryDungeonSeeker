@@ -40,7 +40,6 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Move();
         Rotation();
         Camera.transform.position = transform.position;
     }

@@ -11,6 +11,8 @@ public class EnemyController : MonoBehaviour
     GameObject Target;
 
     private bool ran = false;
+    private bool walk = false;
+
 
     public Animator EnemyAnimator;
 

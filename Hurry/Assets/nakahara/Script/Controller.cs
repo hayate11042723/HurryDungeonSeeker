@@ -16,8 +16,6 @@ public class Controller : MonoBehaviour
 
     public Animator PlayerAnimator;
 
-    public AudioSource audioSource;
-    public AudioClip AttackSE;
     public Transform Camera;
     public float Player_Speed;
     public float Rotation_Speed;
@@ -129,7 +127,6 @@ public class Controller : MonoBehaviour
         {
             PlayerAnimator.SetBool("attack", true);
             canMove = false;
-            audioSource.PlayOneShot(AttackSE);
         }
     }
 

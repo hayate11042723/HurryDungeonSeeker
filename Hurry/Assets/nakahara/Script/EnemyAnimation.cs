@@ -6,6 +6,7 @@ public class EnemyAnimation : MonoBehaviour
 {
     private bool attack = false;
 
+
     public Animator EnemyAnimator;
 
     GameObject Target;

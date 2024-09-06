@@ -9,6 +9,12 @@ public class EnemyMove : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
+    bool run = false;
+    bool idle = true;
+
+    public Animator EnemyAnimator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,24 +23,26 @@ public class EnemyMove : MonoBehaviour
     }
 
     // CollisionDetectorクラスに作ったonTriggerStayEventにセットする。
-    public void OnDetectObject(Collider collider)
+    public void OnDetectObject(Collider other)
     {
         // 検知したオブジェクトに"Player"タグが付いてれば、そのオブジェクトを追いかける
-        if (collider.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             // 対象のオブジェクトを追いかける
-            navMeshAgent.destination = collider.gameObject.transform.position;
+            navMeshAgent.destination = other.transform.position;
+            EnemyAnimator.SetBool("run", true);
         }
     }
 
     // CollisionDetectorクラスに作ったonTriggerExitEventにセットする。 
-    public void OnLoseObject(Collider collider)
+    public void OnLoseObject(Collider other)
     {
         // 検知したオブジェクトに"Player"タグが付いてれば、その場で止まる
-        if (collider.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             // その場で止まる（目的地を今の自分自身の場所にすることにより止めている）
             navMeshAgent.destination = this.gameObject.transform.position;
+            EnemyAnimator.SetBool("run", false);
         }
     }
 }

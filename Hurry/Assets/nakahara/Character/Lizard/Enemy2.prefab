@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8334994540877101317}
   - component: {fileID: 2086389653892520858}
   - component: {fileID: 5427988749187954427}
+  - component: {fileID: 7309892710627336512}
   m_Layer: 0
   m_Name: StatusManager
   m_TagString: Enemy
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 1445653902487988815}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0039, y: 1.4068, z: -0.0163}
-  m_LocalScale: {x: 1.8813846, y: 2.2453198, z: 2.2585557}
+  m_LocalPosition: {x: -0.0039, y: 1.4068, z: 0.8194}
+  m_LocalScale: {x: 1.8813846, y: 2.2453198, z: 3.9301128}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9173341465309682879}
@@ -155,6 +156,21 @@ MonoBehaviour:
   audioSource: {fileID: 4843132257952736560}
   HitSE: {fileID: 8300000, guid: 5d42632894ddb34499f92e6fe89ad2fd, type: 3}
   TagName: Weapon
+--- !u!114 &7309892710627336512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445653902487988815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3741706fb7db14794a694d94d1e564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  EnemyAnimator: {fileID: 6430384772625770811}
+  WeaponCollider: {fileID: 8334994540877101317}
 --- !u!1 &5041401232116961796
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +595,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bf6e1ecaee2ae5a46b759c1ee8c5865e, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -649,7 +665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangeTime: 5
-  EnemySpeed: 0.01
+  EnemySpeed: 0.03
   EnemyAnimator: {fileID: 6430384772625770811}
 --- !u!135 &8151169090180027602
 SphereCollider:

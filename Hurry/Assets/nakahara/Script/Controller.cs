@@ -74,17 +74,6 @@ public class Controller : MonoBehaviour
         WeaponCollider.enabled = false;
         PlayerAnimator.SetBool("attack", false);
     } 
-    void WeaponON2()
-    {
-        WeaponCollider.enabled = true;
-    }
-
-    void WeaponOFF2()
-    {
-        WeaponCollider.enabled = false;
-        PlayerAnimator.SetBool("attack2", false);
-    }
-
     void CanMove()
     {
         canMove = true;

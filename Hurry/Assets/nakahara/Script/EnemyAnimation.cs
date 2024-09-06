@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,22 +7,10 @@ public class EnemyAnimation : MonoBehaviour
 {
     private bool attack = false;
 
-
     public Animator EnemyAnimator;
 
     GameObject Target;
 
-    public Collider WeaponCollider;
-
-    void WeaponON()
-    {
-        WeaponCollider.enabled = true;
-    }
-
-    void WeaponOFF()
-    {
-        WeaponCollider.enabled = false;
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")

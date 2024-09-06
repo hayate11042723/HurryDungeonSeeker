@@ -10437,7 +10437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9153713324364730514, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: ResetTime
-      value: 3
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 9153713324364730514, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: audioSource

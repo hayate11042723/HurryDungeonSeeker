@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Main: {fileID: 8360248645711644165}
-  HP: 5
-  MaxHP: 5
+  HP: 10
+  MaxHP: 10
   ResetTime: 0.5
   HPGage: {fileID: 9062078443743918443}
   Effect: {fileID: 8401420669417507066, guid: c0ae3c7c45191a046ba505a6ae2d0a07, type: 3}
@@ -168,9 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3741706fb7db14794a694d94d1e564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 0}
   EnemyAnimator: {fileID: 6430384772625770811}
-  WeaponCollider: {fileID: 8334994540877101317}
 --- !u!1 &5041401232116961796
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +685,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 6
-  m_Center: {x: 0, y: 0, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &9173341465309682879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2fcb218bae311564bb0644962a1b1d0d, type: 3}

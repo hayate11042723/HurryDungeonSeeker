@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,8 +8,8 @@ public class EnemyMove : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
-    bool run = false;
-    bool idle = true;
+    private bool run = false;
+    private bool idle = true;
 
     public Animator EnemyAnimator;
 

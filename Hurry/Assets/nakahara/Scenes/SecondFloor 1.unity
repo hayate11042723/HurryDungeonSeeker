@@ -2656,6 +2656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5953607799277670754, guid: b011ff7071339264ea26527ecc8acd09, type: 3}
+      propertyPath: y
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 8020351601554718088, guid: b011ff7071339264ea26527ecc8acd09, type: 3}
       propertyPath: m_Name
       value: Abyss
@@ -2821,7 +2825,8 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 2036726989}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5209159463194627267, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 61294322838575431, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}

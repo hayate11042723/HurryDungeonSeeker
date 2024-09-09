@@ -10379,6 +10379,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5296265143863902157, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: Score
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5541703577403178151, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: HPGage
       value: 
@@ -10473,7 +10477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: SecondFloor 1
-  Score: 2
+  Score: 10
 --- !u!114 &1819765522340642884 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4666330101891653310, guid: 6795b68e7e82d744bab6c1151f483c00, type: 3}

@@ -411,7 +411,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 10
-  m_Center: {x: 0, y: 0, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3263105124007748540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5030637051793936899, guid: 2fcb218bae311564bb0644962a1b1d0d, type: 3}
@@ -521,12 +521,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8088487452482169245, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6924480444574884631}
+    - targetCorrespondingSourceObject: {fileID: 8088487452482169245, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3861705579633706142}
   m_SourcePrefab: {fileID: 100100000, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}
---- !u!65 &802362232789426550 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 5618171977809111017, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}
-  m_PrefabInstance: {fileID: 5104075461051795103}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3933126735492591362 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8088487452482169245, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}
@@ -544,9 +542,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3741706fb7db14794a694d94d1e564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 0}
   EnemyAnimator: {fileID: 6138952059738868239}
-  WeaponCollider: {fileID: 802362232789426550}
+--- !u!114 &3861705579633706142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933126735492591362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d424fd34fa50934abff9d11c6d0cb6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Main: {fileID: 1992314255849255696}
+  HP: 5
+  MaxHP: 5
+  ResetTime: 0.5
+  HPGage: {fileID: 5182372107336023247}
+  Effect: {fileID: 8401420669417507066, guid: c0ae3c7c45191a046ba505a6ae2d0a07, type: 3}
+  audioSource: {fileID: 2678494798840068194}
+  HitSE: {fileID: 8300000, guid: 5d42632894ddb34499f92e6fe89ad2fd, type: 3}
+  TagName: Weapon
 --- !u!4 &8119639018221107713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3925891187130481822, guid: 5d9b480b43a41b74aac864ba3e33a2ac, type: 3}

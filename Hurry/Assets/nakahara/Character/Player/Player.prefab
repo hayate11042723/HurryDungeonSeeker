@@ -540,7 +540,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -991,7 +991,6 @@ GameObject:
   m_Component:
   - component: {fileID: 61294322838575431}
   - component: {fileID: 4819701517989876073}
-  - component: {fileID: 5209159463194627267}
   - component: {fileID: 5616943751232544600}
   - component: {fileID: 5407033204727122425}
   - component: {fileID: 4247108159323822187}
@@ -1048,18 +1047,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5209159463194627267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218812212937526034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6827245b860df7743a21020e1b0b936d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &5616943751232544600
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1986,7 +1973,6 @@ GameObject:
   - component: {fileID: 7803533590095324711}
   - component: {fileID: 4094352527797982337}
   - component: {fileID: 8421527764084129857}
-  - component: {fileID: 6174162157926742063}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Weapon
@@ -2080,18 +2066,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 3, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6174162157926742063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2917196163391227317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5aa2d76bca5154eabd8a608a71b184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2936389355175236856
 GameObject:
   m_ObjectHideFlags: 0

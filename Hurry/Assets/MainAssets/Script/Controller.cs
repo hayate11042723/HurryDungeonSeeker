@@ -35,8 +35,14 @@ public class Controller : MonoBehaviour
         public float speed;
     }
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Rotation();
         Camera.transform.position = transform.position;
@@ -78,12 +84,6 @@ public class Controller : MonoBehaviour
     {
         canMove = true;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
 
     // XboxコントローラーRTボタンでジャンプ
     public void OnJump(InputAction.CallbackContext context)
@@ -100,14 +100,7 @@ public class Controller : MonoBehaviour
 
     }
 
-    // 接地しているかどうかの判定
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag(TagName))
-        {
-            isJumping = false;
-        }
-    }
+   
 
     // XboxコントローラーAボタンで攻撃
     public void OnAttack(InputAction.CallbackContext context)
@@ -130,32 +123,32 @@ public class Controller : MonoBehaviour
         rot = Vector3.zero;
         isRun = false;
         WeaponCollider.enabled = false;
-        //if (context.phase == InputActionPhase.Performed)
-        //{
+        if (context.phase == InputActionPhase.Performed)
+        {
 
-        //}
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            rot.y = -90;
-            MoveSet();
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            rot.y = 90;
-            MoveSet();
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rot.y = 180;
-            MoveSet();
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rot.y = 0;
-            MoveSet();
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rot.y = -90;
+                MoveSet();
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                rot.y = 90;
+                MoveSet();
+            }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                rot.y = 180;
+                MoveSet();
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                rot.y = 0;
+                MoveSet();
+            }
         }
 
         transform.Translate(speed);
-        PlayerAnimator.SetBool("run", isRun);
     }
 }

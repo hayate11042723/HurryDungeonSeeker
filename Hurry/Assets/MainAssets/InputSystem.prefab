@@ -59,8 +59,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8762500839107836954, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+      - m_Target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
@@ -74,13 +74,21 @@ MonoBehaviour:
     m_ActionId: 45c05226-64e6-4a0f-9825-7f0081960e12
     m_ActionName: Player/Move[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1218812212937526034, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 26fe6b9c-36c7-4b79-a433-e8bc07f2f008
     m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7c78fea3-ef07-4d93-8904-a4b1cc6b797b
-    m_ActionName: Player/Fire[/XInputControllerWindows/rightTrigger,/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8762500839107836954, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
@@ -153,6 +161,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 66768692-f508-4010-a08b-e1f853ee78a6
     m_ActionName: Player/Jump[/XInputControllerWindows/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0fb32cd3-8e96-4de0-8233-89acfcbb57c3
+    m_ActionName: Player/Attack2[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

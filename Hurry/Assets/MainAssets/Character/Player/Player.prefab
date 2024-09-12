@@ -996,6 +996,8 @@ GameObject:
   - component: {fileID: 4247108159323822187}
   - component: {fileID: 6716160091388564417}
   - component: {fileID: 5296265143863902157}
+  - component: {fileID: 8167957949467494253}
+  - component: {fileID: 4878625857770456770}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1165,7 +1167,7 @@ MonoBehaviour:
   TagName: Floor
   PlayerAnimator: {fileID: 4819701517989876073}
   Camera: {fileID: 0}
-  Player_Speed: 0.01
+  Player_Speed: 0
   Rotation_Speed: 1
   WeaponCollider: {fileID: 8421527764084129857}
 --- !u!114 &5296265143863902157
@@ -1182,6 +1184,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene: SecondFloor
   Score: 1
+--- !u!114 &8167957949467494253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218812212937526034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c5c3f9b2b29b14e94dfca336f16050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 10
+  _jumpSpeed: 7
+  _gravity: 15
+  _fallSpeed: 10
+  _initFallSpeed: 2
+  _targetCamera: {fileID: 0}
+--- !u!143 &4878625857770456770
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218812212937526034}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0.16
+  m_Radius: 0.100000024
+  m_SlopeLimit: 45
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1246275224174275803
 GameObject:
   m_ObjectHideFlags: 0

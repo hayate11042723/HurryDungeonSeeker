@@ -173,6 +173,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene: LastFloor 1
   Score: 2
+--- !u!114 &45731442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+  m_PrefabInstance: {fileID: 1614743389608117354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45731431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c5c3f9b2b29b14e94dfca336f16050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74187932
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,9 +431,13 @@ PrefabInstance:
       value: Player/Attack2[/Keyboard/enter]
       objectReference: {fileID: 0}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 45731439}
+      objectReference: {fileID: 45731442}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -430,7 +445,7 @@ PrefabInstance:
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 45731439}
+      objectReference: {fileID: 45731442}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnMove
@@ -442,6 +457,10 @@ PrefabInstance:
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMove, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6083488427754842364, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_Name
@@ -2718,6 +2737,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72d888884df4b474cab0cc1345140a6f, type: 3}
+--- !u!20 &1984105135 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7174733594821217340, guid: eb85e2b915452a841aee2fb438a0361f, type: 3}
+  m_PrefabInstance: {fileID: 437051143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2035586312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3044,6 +3068,18 @@ PrefabInstance:
       propertyPath: Player_Speed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: TagName
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: _targetCamera
+      value: 
+      objectReference: {fileID: 1984105135}
+    - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: PlayerAnimator
+      value: 
+      objectReference: {fileID: 45731437}
     - target: {fileID: 8762500839107836954, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: Camera
       value: 

@@ -52,7 +52,6 @@ public class Controller : MonoBehaviour
     {
         speed.z = Player_Speed;
         transform.eulerAngles = Camera.transform.eulerAngles + rot;
-        isRun = true;
     }
 
     void Rotation()
@@ -112,43 +111,43 @@ public class Controller : MonoBehaviour
         }
     }
 
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        if (canMove == false)
-        {
-            return;
-        }
+    //public void OnMove(InputAction.CallbackContext context)
+    //{
+    //    if (canMove == false)
+    //    {
+    //        return;
+    //    }
 
-        speed = Vector3.zero;
-        rot = Vector3.zero;
-        isRun = false;
-        WeaponCollider.enabled = false;
-        if (context.phase == InputActionPhase.Performed)
-        {
+    //    speed = Vector3.zero;
+    //    rot = Vector3.zero;
+    //    isRun = false;
+    //    WeaponCollider.enabled = false;
+    //    if (context.phase == InputActionPhase.Performed)
+    //    {
 
 
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                rot.y = -90;
-                MoveSet();
-            }
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                rot.y = 90;
-                MoveSet();
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                rot.y = 180;
-                MoveSet();
-            }
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                rot.y = 0;
-                MoveSet();
-            }
-        }
+    //        if (Input.GetKeyDown(KeyCode.W))
+    //        {
+    //            rot.y = -90;
+    //            MoveSet();
+    //        }
+    //        if (Input.GetKeyDown(KeyCode.S))
+    //        {
+    //            rot.y = 90;
+    //            MoveSet();
+    //        }
+    //        if (Input.GetKeyDown(KeyCode.A))
+    //        {
+    //            rot.y = 180;
+    //            MoveSet();
+    //        }
+    //        if (Input.GetKeyDown(KeyCode.D))
+    //        {
+    //            rot.y = 0;
+    //            MoveSet();
+    //        }
+    //    }
 
-        transform.Translate(speed);
-    }
+    //    transform.Translate(speed);
+    //}
 }

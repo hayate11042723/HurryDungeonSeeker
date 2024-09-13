@@ -1202,6 +1202,8 @@ MonoBehaviour:
   _fallSpeed: 10
   _initFallSpeed: 2
   _targetCamera: {fileID: 0}
+  PlayerAnimator: {fileID: 0}
+  TagName: 
 --- !u!143 &4878625857770456770
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1227,7 +1229,7 @@ CharacterController:
   m_StepOffset: 0.2
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!1 &1246275224174275803
 GameObject:
   m_ObjectHideFlags: 0

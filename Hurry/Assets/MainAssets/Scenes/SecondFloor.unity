@@ -439,9 +439,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 45731442}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 45731439}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 45731439}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 45731442}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -451,12 +459,24 @@ PrefabInstance:
       value: OnMove
       objectReference: {fileID: 0}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnAttack
       objectReference: {fileID: 0}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMove, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5331130944487570322, guid: 6b7711a2ea2199244b4fa62a9c0fc755, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3048,6 +3068,18 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878625857770456770, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878625857770456770, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878625857770456770, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5209159463194627267, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: Camera
       value: 
@@ -3055,6 +3087,14 @@ PrefabInstance:
     - target: {fileID: 5296265143863902157, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: Scene
       value: LastFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407033204727122425, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: m_Center.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407033204727122425, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5541703577403178151, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: HPGage
@@ -3071,6 +3111,10 @@ PrefabInstance:
     - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: TagName
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
+      propertyPath: _jumpSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8167957949467494253, guid: 382a49200fdd2e54a911f778eaa0a178, type: 3}
       propertyPath: _targetCamera

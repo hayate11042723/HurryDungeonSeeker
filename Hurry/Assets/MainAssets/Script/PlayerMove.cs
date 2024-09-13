@@ -37,7 +37,9 @@ public class PlayerMove : MonoBehaviour
 
     public Animator PlayerAnimator;
     private bool isJumping = false;
-    bool isRun = false;
+    private bool isRun = false;
+    public string TagName;
+
 
 
     /// <summary>
@@ -47,7 +49,6 @@ public class PlayerMove : MonoBehaviour
     {
         // 入力値を保持しておく
         _inputMove = context.ReadValue<Vector2>();
-        PlayerAnimator.SetBool("run", isRun);
     }
 
     /// <summary>
@@ -60,6 +61,14 @@ public class PlayerMove : MonoBehaviour
 
         // 鉛直上向きに速度を与える
         _verticalVelocity = _jumpSpeed;
+    }
+    // 接地しているかどうかの判定
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(TagName))
+        {
+            isJumping = false;
+        }
     }
 
     private void Awake()
@@ -125,11 +134,17 @@ public class PlayerMove : MonoBehaviour
                 _transform.eulerAngles.y,
                 targetAngleY,
                 ref _turnVelocity,
-                0.1f
-            );
-            isRun = true;
+                0.1f);
             // オブジェクトの回転を更新
             _transform.rotation = Quaternion.Euler(0, angleY, 0);
+        }
+
+        PlayerAnimator.SetBool("run", isRun);
+        PlayerAnimator.SetBool("jump", isJumping);
+
+        if (_inputMove != Vector2.zero)
+        {
+            isRun = true;
         }
         else
         {

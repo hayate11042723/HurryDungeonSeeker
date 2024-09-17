@@ -41,32 +41,10 @@ public class Controller : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        Rotation();
-        Camera.transform.position = transform.position;
-    }
-
     void MoveSet()
     {
         speed.z = Player_Speed;
         transform.eulerAngles = Camera.transform.eulerAngles + rot;
-    }
-
-    void Rotation()
-    {
-        var speed = Vector3.zero;
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            speed.y = -Rotation_Speed;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            speed.y = Rotation_Speed;
-        }
-
-        Camera.transform.eulerAngles += speed;
     }
 
     void WeaponON()

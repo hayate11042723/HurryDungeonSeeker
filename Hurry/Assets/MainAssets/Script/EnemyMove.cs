@@ -8,8 +8,8 @@ public class EnemyMove : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
-    private bool run = false;
-    private bool idle = true;
+    public bool run = false;
+    public bool idle = true;
 
     public Animator EnemyAnimator;
 

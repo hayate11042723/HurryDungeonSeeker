@@ -10,9 +10,8 @@ public class Controller : MonoBehaviour
     public float JumpPower;
     private Rigidbody rb;
     public string TagName;
-    private bool isJumping = false;
 
-    bool canMove = true;
+    public bool canMove = true;
 
     public Animator PlayerAnimator;
 
@@ -23,7 +22,7 @@ public class Controller : MonoBehaviour
     Vector3 speed = Vector3.zero;
     Vector3 rot = Vector3.zero;
 
-    bool isRun = false;
+    private bool isRun = false;
 
     public Collider WeaponCollider;
 
@@ -61,23 +60,6 @@ public class Controller : MonoBehaviour
     {
         canMove = true;
     }
-
-    // XboxコントローラーRTボタンでジャンプ
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        //Performedフェーズの判定を行う
-        if (context.phase == InputActionPhase.Performed && !isJumping)
-        {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                rb.velocity = Vector3.up * JumpPower;
-                isJumping = true;
-            }
-        }
-
-    }
-
-   
 
     // XboxコントローラーAボタンで攻撃
     public void OnAttack(InputAction.CallbackContext context)

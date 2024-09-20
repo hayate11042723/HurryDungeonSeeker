@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    private bool attack = false;
+    public bool attack = false;
 
     public Animator EnemyAnimator;
 

@@ -10,8 +10,8 @@ public class EnemyController : MonoBehaviour
 
     GameObject Target;
 
-    private bool ran = false;
-    private bool walk = true;
+    public bool ran = false;
+    public bool walk = true;
 
 
     public Animator EnemyAnimator;

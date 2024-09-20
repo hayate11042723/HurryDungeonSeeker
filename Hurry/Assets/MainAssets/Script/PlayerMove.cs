@@ -36,8 +36,8 @@ public class PlayerMove : MonoBehaviour
     private bool _isGroundedPrev;
 
     public Animator PlayerAnimator;
-    private bool isJumping = false;
-    private bool isRun = false;
+    public bool isJumping = false;
+    public bool isRun = false;
     public string TagName;
 
 

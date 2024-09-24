@@ -7,12 +7,10 @@ using UnityEngine.Events;
 
 public class SphereSensor : MonoBehaviour
 {// OnTriggerStayイベント時に実行したい関数を登録する変数（引数にColliderを取る）
-    [SerializeField]
-    private UnityEvent<Collider> onTriggerStayEvent = new UnityEvent<Collider>();
+    [SerializeField]private UnityEvent<Collider> onTriggerStayEvent = new UnityEvent<Collider>();
 
     //  OnTriggerExitイベント時に実行したい関数を登録する変数（引数にColliderを取る）
-    [SerializeField]
-    private UnityEvent<Collider> onTriggerExitEvent = new UnityEvent<Collider>();
+    [SerializeField]private UnityEvent<Collider> onTriggerExitEvent = new UnityEvent<Collider>();
 
     /// <summary>
     /// Is TriggerがONで他のGameObjectがCollider内にいるときに呼ばれ続ける
